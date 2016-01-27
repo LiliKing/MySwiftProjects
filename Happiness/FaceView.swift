@@ -31,7 +31,7 @@ class FaceView: UIView {
     
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
-        static let FaceRadiusToEyeOffsetRatio: CGFloat = 3
+        static let FaceRadiusToEyeOffsetRatio: CGFloat = 5
         static let FaceRadiusToEyeSeparationRatio: CGFloat = 1.5
         static let FaceRadiusToMouthWidthRadio: CGFloat = 1
         static let FaceRadiusToMouthHeightRatio: CGFloat = 3
@@ -68,7 +68,7 @@ class FaceView: UIView {
         let start = CGPoint(x: faceCenter.x - mouthWidth / 2, y: faceCenter.y + mouthVerticalOffset)
         let end = CGPoint(x: start.x + mouthWidth, y: start.y )
         let cp1 = CGPoint(x: start.x + mouthWidth / 3 , y: start.y + smileHegiht)
-        let cp2 = CGPoint(x: end.x - mouthWidth, y: cp1.y)
+        let cp2 = CGPoint(x: end.x - mouthWidth/3, y: cp1.y)
         
         let path = UIBezierPath()
         path.moveToPoint(start)
