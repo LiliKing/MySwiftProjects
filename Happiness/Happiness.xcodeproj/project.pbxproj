@@ -23,7 +23,7 @@
 		2A18D10D1C55FF910083F2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A18D1101C55FF910083F2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A18D1121C55FF910083F2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A18D11A1C56075A0083F2E7 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		2A18D11A1C56075A0083F2E7 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceView.swift; path = ../FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,6 @@
 		2A18D0FA1C55FF910083F2E7 = {
 			isa = PBXGroup;
 			children = (
-				2A18D11A1C56075A0083F2E7 /* FaceView.swift */,
 				2A18D1051C55FF910083F2E7 /* Happiness */,
 				2A18D1041C55FF910083F2E7 /* Products */,
 			);
@@ -57,6 +56,7 @@
 		2A18D1051C55FF910083F2E7 /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
+				2A18D11A1C56075A0083F2E7 /* FaceView.swift */,
 				2A18D1081C55FF910083F2E7 /* ViewController.swift */,
 				2A18D10A1C55FF910083F2E7 /* Main.storyboard */,
 				2A18D1061C55FF910083F2E7 /* AppDelegate.swift */,
@@ -291,6 +291,7 @@
 				2A18D1171C55FF910083F2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

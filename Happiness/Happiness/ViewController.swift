@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FaceViewDataSource {
+    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var faceView: FaceView!{
+        didSet{
+            faceView.faceViewDataSource = self
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var happiness: Int = 100{
+        didSet{
+            happiness = min(max(happiness, 0), 100)
+        
+            upDataUI()
+        }
     }
-
+    
+    private func upDataUI(){
+        faceView.setNeedsDisplay()
+    }
+    
+    func smilinessForFaceView(sender: FaceView)-> Double? {
+        return (Double(happiness) - 50.0)/50.0
+    }
 
 }
 
