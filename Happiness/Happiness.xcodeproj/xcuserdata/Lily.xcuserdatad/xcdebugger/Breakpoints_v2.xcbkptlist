@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Happiness/ViewController.swift"
-            timestampString = "475594410.616619"
+            timestampString = "475677317.164512"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "upDataUI()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,27 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Happiness/ViewController.swift"
-            timestampString = "475594587.014962"
+            timestampString = "475677317.164512"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Happiness/ViewController.swift"
-            timestampString = "475594600.36675"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -58,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FaceView.swift"
-            timestampString = "475594624.445287"
+            timestampString = "475654441.997848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "drawRect(_:)"
             landmarkType = "5">
          </BreakpointContent>

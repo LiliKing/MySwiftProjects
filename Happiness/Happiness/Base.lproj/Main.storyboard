@@ -17,12 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vxb-Dz-Xwh" appends="YES" id="9Jv-4s-lJA"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="faceView" destination="FJT-xr-VS8" id="xVw-MY-o1p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVi-0C-uIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Vxb-Dz-Xwh">
+                    <connections>
+                        <action selector="ChangeHappiness:" destination="jhs-hz-wIJ" id="6y7-lN-xiL"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="96" y="306"/>
         </scene>
