@@ -14,7 +14,7 @@ class ViewController: UIViewController, FaceViewDataSource {
         didSet{
             happiness = min(max(happiness, 0), 100)
             
-            upDataUI()
+            updateUI()
         }
     }
     
@@ -45,8 +45,8 @@ class ViewController: UIViewController, FaceViewDataSource {
     }
    
     
-    private func upDataUI(){
-        faceView.setNeedsDisplay()
+    private func updateUI(){
+        faceView?.setNeedsDisplay()
     }
     
     func smilinessForFaceView(sender: FaceView)-> Double? {
