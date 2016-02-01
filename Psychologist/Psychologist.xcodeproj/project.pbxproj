@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A6FB66B1C5F8B1800BA3BEC /* TextUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FB66A1C5F8B1800BA3BEC /* TextUIViewController.swift */; };
+		2A6FB66D1C5F8DE800BA3BEC /* DiagnosedHappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FB66C1C5F8DE800BA3BEC /* DiagnosedHappinessViewController.swift */; };
 		FFA8C8801C5E0F3B000E575D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8C87F1C5E0F3B000E575D /* AppDelegate.swift */; };
 		FFA8C8821C5E0F3B000E575D /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8C8811C5E0F3B000E575D /* PsychologistViewController.swift */; };
 		FFA8C8851C5E0F3B000E575D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA8C8831C5E0F3B000E575D /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A6FB66A1C5F8B1800BA3BEC /* TextUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextUIViewController.swift; sourceTree = "<group>"; };
+		2A6FB66C1C5F8DE800BA3BEC /* DiagnosedHappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosedHappinessViewController.swift; sourceTree = "<group>"; };
 		FFA8C87C1C5E0F3B000E575D /* Psychologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psychologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA8C87F1C5E0F3B000E575D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA8C8811C5E0F3B000E575D /* PsychologistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				FFA8C8AE1C5E130F000E575D /* ViewController.swift */,
 				FFA8C87F1C5E0F3B000E575D /* AppDelegate.swift */,
 				FFA8C8811C5E0F3B000E575D /* PsychologistViewController.swift */,
+				2A6FB66A1C5F8B1800BA3BEC /* TextUIViewController.swift */,
+				2A6FB66C1C5F8DE800BA3BEC /* DiagnosedHappinessViewController.swift */,
 				FFA8C8831C5E0F3B000E575D /* Main.storyboard */,
 				FFA8C8861C5E0F3B000E575D /* Assets.xcassets */,
 				FFA8C8881C5E0F3B000E575D /* LaunchScreen.storyboard */,
@@ -199,6 +205,7 @@
 				TargetAttributes = {
 					FFA8C87B1C5E0F3B000E575D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 56FC3AEUL8;
 					};
 					FFA8C88F1C5E0F3B000E575D = {
 						CreatedOnToolsVersion = 7.2;
@@ -264,6 +271,8 @@
 			files = (
 				FFA8C8821C5E0F3B000E575D /* PsychologistViewController.swift in Sources */,
 				FFA8C8801C5E0F3B000E575D /* AppDelegate.swift in Sources */,
+				2A6FB66B1C5F8B1800BA3BEC /* TextUIViewController.swift in Sources */,
+				2A6FB66D1C5F8DE800BA3BEC /* DiagnosedHappinessViewController.swift in Sources */,
 				FFA8C8B01C5E130F000E575D /* ViewController.swift in Sources */,
 				FFA8C8AF1C5E130F000E575D /* FaceView.swift in Sources */,
 			);
@@ -405,10 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Psychologist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lili.psychologist.Psychologist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -416,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Psychologist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lili.psychologist.Psychologist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -490,6 +505,7 @@
 				FFA8C8A61C5E0F3B000E575D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFA8C8A71C5E0F3B000E575D /* Build configuration list for PBXNativeTarget "PsychologistTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +514,7 @@
 				FFA8C8A91C5E0F3B000E575D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFA8C8AA1C5E0F3B000E575D /* Build configuration list for PBXNativeTarget "PsychologistUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				FFA8C8AC1C5E0F3B000E575D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
