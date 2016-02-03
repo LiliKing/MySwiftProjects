@@ -19,7 +19,7 @@ class TextUIViewController: UIViewController {
     
     var text: String = "" {
         didSet{
-            textview.text = text
+            textview?.text = text
         }
     }
 }

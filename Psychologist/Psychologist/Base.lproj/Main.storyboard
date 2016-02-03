@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Diagnosed Happiness View Controller-->
+        <!--Psychologist View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DiagnosedHappinessViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PsychologistViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -104,22 +104,14 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Cac-VG-FPl">
-                        <barButtonItem key="rightBarButtonItem" title="History" id="SVb-26-l1x">
-                            <connections>
-                                <segue destination="b0y-0i-cap" kind="popoverPresentation" identifier="Show Diagnostic History" popoverAnchorBarButtonItem="SVb-26-l1x" id="Iu7-qg-GdO">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Cac-VG-FPl"/>
                     <connections>
                         <segue destination="lCI-tC-zrL" kind="showDetail" identifier="nothing" id="Gua-8q-rPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="842"/>
+            <point key="canvasLocation" x="-768" y="850"/>
         </scene>
         <!--TextUI View Controller-->
         <scene sceneID="xQI-5d-fTU">
@@ -133,10 +125,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SUt-x0-hMq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="666" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SUt-x0-hMq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -150,12 +141,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textview" destination="SUt-x0-hMq" id="lwh-5F-Amt"/>
+                        <outlet property="textview" destination="SUt-x0-hMq" id="vYL-FJ-GRe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBV-KZ-bfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="809"/>
+            <point key="canvasLocation" x="42" y="1170"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="BFK-Xy-xcp">
@@ -187,7 +178,15 @@
                             <outletCollection property="gestureRecognizers" destination="t3m-ZN-TKj" appends="YES" id="blW-ze-FoL"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="wqo-8B-oZp"/>
+                    <navigationItem key="navigationItem" id="wqo-8B-oZp">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="l2t-rE-FsP">
+                            <connections>
+                                <segue destination="b0y-0i-cap" kind="popoverPresentation" identifier="Show Diagnostic History" popoverAnchorBarButtonItem="l2t-rE-FsP" id="UW1-gt-Ox1">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="faceView" destination="MM5-12-QVH" id="vNh-oO-Zcf"/>
                     </connections>
@@ -199,7 +198,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-66" y="1730"/>
+            <point key="canvasLocation" x="-651" y="1197"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="257-ko-AQg">
@@ -239,6 +238,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gua-8q-rPX"/>
+        <segue reference="dfU-ty-7AQ"/>
     </inferredMetricsTieBreakers>
 </document>
