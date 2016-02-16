@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         passwordLabel.text = secure ? "Secured Password" : "Password"
         nameLabel.text = loggedInUser?.name
         companyLabel.text = loggedInUser?.company
-        imageView.image = loggedInUser?.image
+        image = loggedInUser?.image
     }
    
     @IBAction func login() {
@@ -48,7 +48,32 @@ class ViewController: UIViewController {
         secure = !secure
     }
     
-    
+    var image: UIImage? {
+        get {
+            return imageView.image
+        }
+        set {
+            imageView.image = newValue
+            if let constrainedView = imageView {
+                if let newImage = newValue {
+                    aspectRationConstraint = NSLayoutConstraint(item: constrainedView, attribute: .Width, relatedBy: .Equal, toItem: constrainedView, attribute: .Height, multiplier: newImage.aspectRatio, constant: 0)
+                }
+            }
+        }
+        
+    }
+    var aspectRationConstraint: NSLayoutConstraint? {
+        willSet{
+            if let existingConstraint = aspectRationConstraint {
+                view.removeConstraint(existingConstraint)
+            }
+        }
+        didSet{
+            if let newConstraint = aspectRationConstraint {
+                view.addConstraint(newConstraint)
+            }
+        }
+    }
   
 
 }
@@ -59,5 +84,11 @@ extension User {
         }else {
             return UIImage(named: "defult")
         }
+    }
+}
+
+extension UIImage {
+    var aspectRatio: CGFloat {
+        return size.height != 0 ? size.width / size.height : 0
     }
 }
