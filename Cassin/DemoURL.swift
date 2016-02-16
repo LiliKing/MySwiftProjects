@@ -8,8 +8,10 @@
 
 import Foundation
 struct DemoURL {
-    static let Stanford = NSURL(string: "http://comm.stanford.edu/wp-content/uploads/2013/01/stanford-campus.png")
+    static let Stanford = NSURL(string: "http://c.hiphotos.baidu.com/image/pic/item/4034970a304e251f2f3d2799a086c9177e3e538d.jpg")
     struct NASA {
-          static let Cassini = NSURL(string: "http://www.jpl.nasa.gov/images/cassini/20090202/poa03883-full.jpg")
+        static let Cassini = NSURL(string: "http://c.hiphotos.baidu.com/image/pic/item/4034970a304e251f2f3d2799a086c9177e3e538d.jpg")
+        static let Earth = NSURL(string: "http://c.hiphotos.baidu.com/image/pic/item/4034970a304e251f2f3d2799a086c9177e3e538d.jpg")
+        static let Saturn = NSURL(string: "http://c.hiphotos.baidu.com/image/pic/item/4034970a304e251f2f3d2799a086c9177e3e538d.jpg")
     }
 }
