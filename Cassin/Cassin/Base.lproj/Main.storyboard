@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,13 +24,6 @@
                                     <segue destination="huk-w8-U5K" kind="showDetail" identifier="earth" id="p0N-jw-lkY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpr-GT-rPf">
-                                <rect key="frame" x="275" y="248" width="50" height="30"/>
-                                <state key="normal" title="Cassini"/>
-                                <connections>
-                                    <segue destination="huk-w8-U5K" kind="showDetail" identifier="cassini" id="3Ef-GU-zDG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0l-jc-lzf">
                                 <rect key="frame" x="277" y="293" width="46" height="30"/>
                                 <state key="normal" title="Saturn"/>
@@ -39,19 +31,22 @@
                                     <segue destination="huk-w8-U5K" kind="showDetail" identifier="saturn" id="W92-I7-0rc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpr-GT-rPf">
+                                <rect key="frame" x="275" y="248" width="50" height="30"/>
+                                <state key="normal" title="Cassini"/>
+                                <connections>
+                                    <segue destination="huk-w8-U5K" kind="showDetail" identifier="cassini" id="3Ef-GU-zDG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2Kw-4g-xkb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="262" id="Gb8-uN-mxz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Gpr-GT-rPf" secondAttribute="trailing" constant="255" id="KvZ-QH-A1l"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A0l-jc-lzf" secondAttribute="bottom" constant="277" id="L6N-VJ-lp4"/>
-                            <constraint firstItem="A0l-jc-lzf" firstAttribute="top" secondItem="Gpr-GT-rPf" secondAttribute="bottom" constant="15" id="OFZ-rT-R04"/>
-                            <constraint firstItem="A0l-jc-lzf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="257" id="SvV-6d-nNt"/>
-                            <constraint firstItem="2Kw-4g-xkb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="132" id="c2s-lL-t3b"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Kw-4g-xkb" secondAttribute="trailing" constant="261" id="koT-RG-N2W"/>
-                            <constraint firstItem="Gpr-GT-rPf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="255" id="o2K-Xy-i0P"/>
-                            <constraint firstItem="Gpr-GT-rPf" firstAttribute="top" secondItem="2Kw-4g-xkb" secondAttribute="bottom" constant="22" id="qC6-cG-pyk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="A0l-jc-lzf" secondAttribute="trailing" constant="257" id="zDK-JB-x4o"/>
+                            <constraint firstItem="A0l-jc-lzf" firstAttribute="top" secondItem="Gpr-GT-rPf" secondAttribute="bottom" constant="15" id="2JE-bf-8jT"/>
+                            <constraint firstItem="Gpr-GT-rPf" firstAttribute="centerX" secondItem="A0l-jc-lzf" secondAttribute="centerX" id="BHH-aQ-rdR"/>
+                            <constraint firstItem="Gpr-GT-rPf" firstAttribute="top" secondItem="2Kw-4g-xkb" secondAttribute="bottom" constant="22" id="PrP-3C-Tij"/>
+                            <constraint firstItem="Gpr-GT-rPf" firstAttribute="centerX" secondItem="2Kw-4g-xkb" secondAttribute="centerX" id="RYv-tx-Wbe"/>
+                            <constraint firstItem="Gpr-GT-rPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VxZ-FS-QmX"/>
+                            <constraint firstItem="Gpr-GT-rPf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="248" id="XlP-Be-eOR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d9O-6q-Uhb"/>
@@ -100,8 +95,16 @@
                     <view key="view" contentMode="scaleToFill" id="aic-l1-JJh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Nz-BA-b9N">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="7Nz-BA-b9N" id="oKY-qr-6Ld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr0-D3-Pz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
