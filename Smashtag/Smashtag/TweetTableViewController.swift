@@ -10,6 +10,10 @@ import UIKit
 
 class TweetTableViewController: UITableViewController {
 
+    
+    var tweets = [String]()
+    var tweetsDetail = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +33,7 @@ class TweetTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return tweets.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,15 +41,17 @@ class TweetTableViewController: UITableViewController {
         return 0
     }
 
-    /*
+    private struct Storyboard{
+    static var CellReuseIdentifier = "Tweet"
+    
+    }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier(Storyboard.CellReuseIdentifier, forIndexPath: indexPath)
+        cell.textLabel?.text = tweets[indexPath.section]
+        cell.detailTextLabel?.text = tweetsDetail[indexPath.section]
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

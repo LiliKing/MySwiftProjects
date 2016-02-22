@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2A5EEA3E1C7B1CE000EBA443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EEA3D1C7B1CE000EBA443 /* AppDelegate.swift */; };
-		2A5EEA401C7B1CE000EBA443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EEA3F1C7B1CE000EBA443 /* ViewController.swift */; };
 		2A5EEA431C7B1CE000EBA443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5EEA411C7B1CE000EBA443 /* Main.storyboard */; };
 		2A5EEA451C7B1CE000EBA443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5EEA441C7B1CE000EBA443 /* Assets.xcassets */; };
 		2A5EEA481C7B1CE000EBA443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5EEA461C7B1CE000EBA443 /* LaunchScreen.storyboard */; };
 		2AA200781C7B1EE1008F0DDB /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA200771C7B1EE1008F0DDB /* TweetTableViewController.swift */; };
+		2AA2007A1C7B26A8008F0DDB /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA200791C7B26A8008F0DDB /* Tweet.swift */; };
+		2AA2007C1C7B26FA008F0DDB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2007B1C7B26FA008F0DDB /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A5EEA3A1C7B1CDF00EBA443 /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5EEA3D1C7B1CE000EBA443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A5EEA3F1C7B1CE000EBA443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2A5EEA421C7B1CE000EBA443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A5EEA441C7B1CE000EBA443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A5EEA471C7B1CE000EBA443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A5EEA491C7B1CE000EBA443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AA200771C7B1EE1008F0DDB /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
+		2AA200791C7B26A8008F0DDB /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		2AA2007B1C7B26FA008F0DDB /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				2A5EEA3D1C7B1CE000EBA443 /* AppDelegate.swift */,
-				2A5EEA3F1C7B1CE000EBA443 /* ViewController.swift */,
-				2A5EEA411C7B1CE000EBA443 /* Main.storyboard */,
 				2AA200771C7B1EE1008F0DDB /* TweetTableViewController.swift */,
+				2AA200791C7B26A8008F0DDB /* Tweet.swift */,
+				2AA2007B1C7B26FA008F0DDB /* File.swift */,
+				2A5EEA411C7B1CE000EBA443 /* Main.storyboard */,
 				2A5EEA441C7B1CE000EBA443 /* Assets.xcassets */,
 				2A5EEA461C7B1CE000EBA443 /* LaunchScreen.storyboard */,
 				2A5EEA491C7B1CE000EBA443 /* Info.plist */,
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA2007A1C7B26A8008F0DDB /* Tweet.swift in Sources */,
+				2AA2007C1C7B26FA008F0DDB /* File.swift in Sources */,
 				2AA200781C7B1EE1008F0DDB /* TweetTableViewController.swift in Sources */,
-				2A5EEA401C7B1CE000EBA443 /* ViewController.swift in Sources */,
 				2A5EEA3E1C7B1CE000EBA443 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
